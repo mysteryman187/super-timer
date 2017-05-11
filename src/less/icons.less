@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'heydings-common';
+  src: url('fonts/heydings_icons.ttf')  format('truetype')       
+}
+
+@font-face {
+  font-family: 'heydings-controls';
+  src: url('fonts/heydings_controls.ttf')  format('truetype')       
+}
+
+.icon {
+    font-family: 'heydings-controls';
+    display: flex;
+    justify-content: center;
+    
+    &.back:after{
+        content: '<'
+    }
+    &.forward:after{
+        content: '>'
+    }
+    &.clock:after{
+         font-family: 'heydings-common';
+         content: 'T';
+    }
+    &.speedometer:after{
+         font-family: 'heydings-common';
+         content: '4';
+    }
+    &.graph:after{
+         font-family: 'heydings-common';
+         content: 'v';
+    }
+    &.kettlebell:after{
+         font-family: 'heydings-common';
+         content: 'W';
+    }
+    &.star:after{
+         font-family: 'heydings-common';
+         content: 's';
+    }
+    &.home:after {
+         font-family: 'heydings-common';
+         content: 'H';
+    }
+    &.running-man:after {
+         content: 'E';
+    }
+    &.halt:after {
+         content: 'G';
+    }
+    &.dumbell:after {
+         content: 'J';
+    }
+    &.pencil:after {
+         content: 'L';
+    }
+    &.stand-by:after {
+         content: 'O';
+    }
+    &.play:after {
+         content: 'P';
+    }
+    &.mute:after {
+         content: 'Q';
+    }
+    &.trash:after {
+         content: 'T';
+    }
+    &.undo:after {
+         content: 'U';
+    }
+    &.close:after {
+         content: 'X';
+    }
+    &.eye:after {
+         content: 'V';
+    }
+   
+    &.redo:after {   
+         content: 'r';
+    }
+    &.pause:after {  
+         content: 'u';
+    }
+    &.burger:after{
+        content: '5';
+    }
+}

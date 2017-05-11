@@ -1,0 +1,92 @@
+
+.speed-o-meter-container {
+    width: 324px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 216px;
+    overflow:hidden;
+
+    .outer-circle {
+        background: linear-gradient(greenyellow 5%, orange 39%, red 60%);
+        width: 100%;
+        height: 324px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .inner-circle {
+            background-color: #18516e;
+            width: 88%;
+            height: 97%;
+            border-top-left-radius: 48%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;     
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .speed-dial {
+                display: flex;
+                flex-direction: column;
+                margin-left: 46px;
+                margin-bottom: 55px;
+                .speed-text {
+                    font-family: 'radioland';
+                    font-size: 40px;
+                    color: #ef2222;
+                    background-color: white;
+                    border-radius: 7px;
+                    //padding: 0px 17px 0px 9px;
+                    padding-top:8px;
+                    border: 1px solid black;   
+                    width: 125px;
+                    height: 63px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center; 
+                }
+                .unit-text {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 21px;
+                    color: white;
+                    padding: 6px;
+                }
+            }
+        }
+        position: relative;
+        .needle-container {
+            position:absolute;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+
+            .needle-inner {
+                width: 2px;
+                height: 100%;
+                transition: transform 0.3s ease-in;
+                .needle {
+                    width: 0; 
+                    height: 0; 
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;                 
+                    border-top: 22px solid #928dab;
+                    .needle-inner-inner{
+                        width: 0;
+                        height: 0;
+                        margin-top: -22px;
+                        margin-left: -5px;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-top: 11px solid #717171;
+                    }
+                }
+            }
+        }
+    }
+}

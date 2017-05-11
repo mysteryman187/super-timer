@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .menu-item {
+        @active-color: #417994;
+        display: flex;
+        align-items: center;
+        
+        background-color: #18516e;
+        height: 70px;
+        border-bottom: 2px solid @active-color;
+        color: #FFFFFF;
+        font-size: 21px;
+        
+        &:active {
+            background-color: @active-color;
+        }
+
+        .icon {
+            font-size: 35px;
+            max-width: 90px;
+            min-width: 90px;
+        }
+    }
+    .hidden-select {
+        visibility:hidden;
+        position:absolute;
+    }
+}

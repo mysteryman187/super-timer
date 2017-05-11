@@ -1,0 +1,13 @@
+export const HOME = 'Home';
+export const RUNNING = 'Running';
+export const BOXING = 'Boxing';
+export const BODYBUILDING = 'BodyBuilding';
+export const CIRCUITS = 'Circuits';
+export const TIMED_EVENT = 'Timed Event';
+export const TIME_CAP = 'Time Cap';
+export const HISTORY = 'History';
+export const SPEED = 'Speed';
+export const RUNNING_TIME = 'Time';
+export const RUNNING_DISTANCE = 'Select Distance';
+export const RUNNING_CIRCUITS = 'Running Circuits';
+export const RUN = 'RUN';

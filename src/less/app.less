@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'rubik';
+  src: url('fonts/Rubik-Light.ttf')  format('truetype')       
+}
+@font-face {
+  font-family: 'radioland';
+  src: url('fonts/RADIOLAND.ttf')  format('truetype')       
+}
+@font-face {
+  font-family: 'radioland-slim';
+  src: url('fonts/RADIOLANDSLIM.ttf')  format('truetype')       
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'rubik';
+    background-color: #18516e;
+}
+
+.animation-container {
+    .animation-element {
+        width: 100%;
+        position:absolute;
+        &.forward-enter {
+            transform: translate(100%, 0); // from this
+            &.forward-enter-active {
+                transform: translate(0, 0);     // to this
+                transition: transform 500ms ease-in;
+            }
+        }
+        &.forward-leave {
+            transform: translate(0, 0); // from this
+            &.forward-leave-active {
+                transform: translate(-100%, 0);     // to this
+                transition: transform 500ms ease-in;
+            }
+        }
+
+        &.back-enter {
+            transform: translate(-100%, 0);
+            &.back-enter-active {
+                transform: translate(0, 0);
+                transition: transform 500ms ease-in;
+            }
+        }
+        &.back-leave {
+            transform: translate(0, 0);
+            &.back-leave-active {
+                transform: translate(100%, 0);
+                transition: transform 500ms ease-in;
+            }
+        }
+    }
+}

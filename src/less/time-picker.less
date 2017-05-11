@@ -1,0 +1,56 @@
+
+
+.time-picker-container {
+    margin: 14px;
+    height: 140px;
+    position: relative;
+    .fade {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        pointer-events: none;
+        &.fade-top {
+            top: 0px;
+            background: linear-gradient( rgba(255,255,255,0.9), rgba(0,0,0,0));
+        }
+        &.fade-bottom {
+            bottom: 0px;
+            background: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,9));
+        }
+    }
+}
+
+
+
+.time-picker {
+    display: flex;
+    background-color: #FFFFFF;
+    font-size: 70px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 7px;
+    border: 1px solid black;
+    .sep {
+        margin-bottom: 16px;
+    }
+    
+    .container {
+        width: 84px;
+        min-width: 84px;
+
+        overflow:hidden;
+        .picker {
+            height: 140px;
+            width: calc(~'100% + 20px');
+            overflow-y: scroll;
+            padding-left: 2px;
+
+            .tile {
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
